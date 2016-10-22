@@ -1,0 +1,15 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Proyecto NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Antonio Cabaneros",
+  "license": "ISC",
+  "dependencies": {
+    "formidable": "^1.0.17",
+    "mocha": "^3.1.2"
+  }
+}
