@@ -6,7 +6,7 @@ exports.writeHead = function(response){
     response.write("<head><link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto'>" +
                    "<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>" + 
                    "<script type='text/javascript' src='https://d3js.org/d3.v4.min.js'></script>" + 
-                   "<title>Notas PHP</title></head>");
+                   "<title>Notas NodeJS</title></head>");
     var css = fs.readFileSync('css/style.css','utf8');
     response.write("<style>" + css + "</style>");
 }

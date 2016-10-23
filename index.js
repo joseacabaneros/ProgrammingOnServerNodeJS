@@ -9,7 +9,7 @@ var Administrar = require("./administrar.js");
 var server = http.createServer();
 console.log("-----Servidor Arrancado-----");
 server.on('request', procesa);
-server.listen(82);
+server.listen(8000);
 
 function procesa(request, response){
     switch(request.method){
