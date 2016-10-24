@@ -5,6 +5,7 @@ var Global = require("./global.js");
 var Consulta = require("./consulta.js");
 var Estadisticas = require("./estadisticas.js");
 var Administrar = require("./administrar.js");
+var Api = require("./api.js");
 
 var server = http.createServer();
 console.log("-----Servidor Arrancado-----");
@@ -20,6 +21,8 @@ function procesa(request, response){
                 Estadisticas.estadisticas(request, response);
             else if(request.url === "/administrar")
                 Administrar.administrarGet(request, response);
+            else if(request.url === "/personas")
+                Api.personas(request, response);
             else
                 index(request, response);
             break;
